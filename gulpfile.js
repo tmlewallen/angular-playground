@@ -5,11 +5,15 @@ var uglify = require('gulp-uglify');
 
 var vendor_scripts = 
 	['./node_modules/angular/angular.js', 
+	 './node_modules/angular-touch/angular-touch.js',
+	 './node_modules/angular-animate/angular-animate.js',
 	 './node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js',
 	 './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js'];
 
 var vendor_styles =
-	['./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css'];
+	['./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css',
+	 './node_modules/bootstrap/dist/css/bootstrap-theme.css',
+	 './node_modules/bootstrap/dist/css/bootstrap.css'];
 
 gulp.task('scripts', function(){
 	return gulp.src(vendor_scripts)
